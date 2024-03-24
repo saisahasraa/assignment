@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         span{
+            color: red;
+         }
+         #address{
+            height:10px;
+         }
+         input[type="radio"]{
+            vertical-align: middle; 
+         }
+         body {
+            margin: 0;
+            padding: 0;
+            height:700px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            border: 2px solid black; 
+            width: 800px;
+            height: 500px; 
+            margin: 0 auto;
+            padding: 50px;
+            background-color:rgb(159, 214, 229); 
+        }
+        label {
+            display: inline-block;
+            margin-top: 10px;
+            width: 200px; 
+            text-align: right; 
+            margin-right: 10px; 
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 240px); 
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 20px 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:first-of-type {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1 style="color: blue;">Registration Form</h1>
+        <label for="fname">First Name (Minimum 6 characters)<span>*</span></label>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last Name<span>*</span></label>
+        <input type="text" id="lname"><br>
+        <label for="email">EmailAddress<span>*</span></label>
+        <input type="email" id="email">
+        <p><span>(one e-mail id only):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(102, 150, 168);"> e.g:smith@hotmail.com</span></p>
+        <label for="password">Password (Minimum 6 characters)<span>*</span></label>
+        <input type="password" id="password"><br>
+        <label for="address">Address<span>*</span></label>
+        <input type="text" id="address"><br>
+        <label for="mobileno">Mobile No<span>*</span></label>
+        <input type="text" id="mobileno">
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+<br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

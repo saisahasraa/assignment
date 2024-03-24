@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Book Store</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color:yellowgreen;
+        color: blue;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        height: 80px;
+    }
+    header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+    header li {
+        display: inline;
+        font-size: 30px;
+        padding-left: 100px;
+
+    }
+    section {
+        background-color: blanchedalmond;
+        width: 15%;
+        min-width: 100px;
+        height: 450px;
+        display: inline-block;
+        vertical-align:middle;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+    }
+
+    section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    section li {
+        color: blue;
+        line-height: 40px;
+    }
+    article {
+        display: inline-block;
+        background-color: orange;
+        width: 80%;
+        height: 450px;
+        vertical-align: top;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+    }
+
+    img {
+       justify-content: center;
+        height: 200px;
+        
+    }
+    .image{
+        display: flex;
+        padding-left: 465px;
+        align-content: center;
+       
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: blue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        color: red;
+    }
+    .cursive-italic {
+    font-family: Brush Script MT, Brush Script Std, cursive; /* Specify a cursive font */
+    font-style: italic; /* Set the text to italic */
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="p home">HOME</a></li>
+        <li><a href="p login">LOGIN</a></li>
+        <li><a href="p regest">REGISTER</a></li>
+        <li><a href="p cate">CATALOGUE</a></li>
+    </ul>
+</header>
+<div>
+    <section>
+
+        <ul>
+            <li><a href="p cse">CSE</a></li>
+            <li><a href="p ece">ECE</a></li>
+            <li><a href="p eee">EEE</a></li>
+            <li><a href="p mech">MECH</a></li>
+        </ul>
+    </section>
+    <article>
+        <div class="image">
+        <img src="https://media.istockphoto.com/id/1216658448/photo/stack-of-colorful-books-isolated-on-white-background-collection-of-different-books-hardback.jpg?s=612x612&w=0&k=20&c=_8yq2H5pkScnt0-DXkud4EEJKi8P0RRzZpAUSrh5lvk=" alt="Stack of books" >
+        </div>
+        <p class="cursive-italic">Welcome to the Online Book Store !!!</p>
+        <h1 class="cursive-italic">"A Huge Collection Of Engineering E-Books"</h1>
+    </article>
+</div>
+</body>
+</html>

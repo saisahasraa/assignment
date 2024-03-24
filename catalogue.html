@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: pink;
+        align-items: left;
+        
+      }
+      th,
+      td {
+        border: 1px solid #000;
+      }
+      img {
+        width: 75px;
+        height: 100px;
+        align-items: left;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 8px;
+      }
+      .left-align {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan="4"><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="data:image/jpeg;base64,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"
+              class="left-align"
+              alt="web-book"
+            />
+          </td>
+          <td>
+            <h4>
+              Book: Web Technologies<br />
+              Author: Uttam K. Roy<br />
+              Publication: Oxford University Press
+            </h4>
+          </td>
+          <td><b>531</b></td>
+          <td><button>Add to cart</button></td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpBWWsjZRaAJ6xWG_8cTiQPdyXzrLaMsZQqJzq401rxSGzchQbvq8jnznT8IBPwXgO_GI&usqp=CAU"
+              alt="php-book"
+            />
+          </td>
+          <td>
+            <h4>
+              Book: PHP & MySQL Web Development<br />
+              Author: Luke Welling & Laura Thompson<br />
+              Publication: PEARSON
+            </h4>
+          </td>
+          <td><b>898</b></td>
+          <td><button>Add to cart</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

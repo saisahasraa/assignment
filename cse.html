@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        select, input, button, p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Science and Engineering</h1>
+        <form>
+            <label for="tb">Text Books:</label>
+            <select id="tb">
+                <option value="tb1">Introduction to Algorithms</option>
+                <option value="tb2">Web Technologies</option>
+                <option value="tb3">Database Systems</option>
+            </select><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity"><br><br>
+            <button>Ok</button><br>
+            <p style="font-family: monospace;">Cost of one book is $500 + $100 for shipping.</p>
+        </form>
+    </div>
+</body>
+</html>
